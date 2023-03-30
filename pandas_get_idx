@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+
+
+pokemon = pd.read_csv("pokemon.csv", index_col="Pokemon").squeeze()
+google = pd.read_csv("google_stock_price.csv")
+pokemon.sort_index(inplace=True)
+pokemon.head(3
+pokemon.get([1,2])
+
+google.idxmax()  #posititon
+
+google[google.idxmin()] #shows smallest number
+
+pokemon.value_counts()  #shows amount of unique values
+
+pokemon.value_counts().sum()  #shows sum of unique
