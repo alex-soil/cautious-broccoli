@@ -15,3 +15,16 @@ google[google.idxmin()] #shows smallest number
 pokemon.value_counts()  #shows amount of unique values
 
 pokemon.value_counts().sum()  #shows sum of unique
+
+
+#create function outside of pandas
+def classify_performance(number):
+    if number < 300:
+        return "Ok"
+    elif number >= 300 and number <650:
+        return "Satisfactory"
+    else:
+            return "Incredible"  
+google.apply(classify_performance) 
+
+google.apply(lambda stock_price: stock_price + 1)
