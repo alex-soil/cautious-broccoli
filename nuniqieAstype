@@ -1,0 +1,23 @@
+
+nba["Age"].add(5)
+nba["Age"] + 5
+nba["Salary"].sub(1000)
+
+nba["Weight in kg"] = nba["Weight"].mul(0.45)
+nba.head(3)
+
+nba["Team"].value_counts()
+nba["Position"].value_counts().head(1)
+nba[select]
+
+nba["Salary"].fillna("NDA", Inplace = True)
+nba.dtypes
+nba.info()
+
+
+nba["Salary"] = nba["Salary"].astype("int") #change number to int
+nba["Number"] = nba["Number"].astype("int")
+nba["Age"] = nba["Age"].astype("int")
+nba["Position"].nunique()
+nba["Team"] = nba["Team"].astype("category") "change words in category if unique
+nba["Team"].nunique()
