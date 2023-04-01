@@ -1,0 +1,11 @@
+nba.Name
+nba.Number
+output= None
+
+nba[["Name", "Team", "Salary"]].tail()
+select=["Name", "Team", "Salary"]
+nba["Sport"] = "Basketball"                                     #create new column
+nba.head(3)
+nba.insert (3, column ="Cool", value = "Basketball")
+nba.head(3)
+nba[select]
