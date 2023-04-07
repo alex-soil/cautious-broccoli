@@ -1,0 +1,14 @@
+df.info()
+
+df["Start Date"] = pd.to_datetime(df["Start Date"])
+df.head(3)
+
+df["Last Login Time"]
+
+df["Last Login Time"]=pd.to_datetime(df["Last Login Time"])
+df.head(3)
+
+df["Senior Management"] = df["Senior Management"].astype("bool")
+df.info()
+
+df["Gender"]=df["Gender"].astype ("category")
